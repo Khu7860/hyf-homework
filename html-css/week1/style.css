@@ -1,0 +1,142 @@
+/* tried to make app through flexbox layout */
+
+/* using media Quries for responsiveness */
+@media(min-width:350px){
+    header{
+        display: flex;
+        width: 65%;
+        align-items: center;
+        margin: auto;
+        margin-top: 0;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        border: 1px solid lightgray;
+        padding: 10px;
+        background-color: #f1f1f1;
+    }
+
+    .navigation{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 65%;
+        margin: auto;
+        margin-top: 0;
+        background-color: #2c3e50;
+        padding: 0;
+
+    }
+
+    .item{
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        align-items: center;
+        margin: auto;
+        margin-top: 40px;
+        justify-content: space-evenly;
+        border: 1px solid lightgray;
+        background-color: #f1f1f1;
+        padding: 40px;
+
+    }
+
+    footer{
+
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        align-items: center;
+        margin: auto;
+        margin-top: 40px;
+        justify-content: space-evenly;
+        background-color: #2c3e50;
+    }
+
+}
+
+/* Setting properties for whole body */
+body{
+    background-image: url(../jonathan-kemper-zSCHyhiRSeQ-unsplash.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family:'Raleway', sans-serif;
+}
+
+.box-1{
+flex-basis: 40%;
+align-items: flex-start;
+}
+
+.box-1 h1{
+    border-bottom: 5px solid rgb(197, 197, 206);
+    display: block;
+}
+
+.box-1 img{
+    width: 80%;
+    height: 50%;
+    border-radius: 10px;
+    /* using a tool to generate a shodow behind image */
+    -webkit-box-shadow: 7px 7px 9px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 7px 7px 9px 0px rgba(0,0,0,0.16);
+    box-shadow: 7px 7px 9px 0px rgba(0,0,0,0.16);
+    
+}
+
+.navigation li{
+    list-style: none;
+    list-style-type: none;
+    /* flex direction row property was not working so i used float */
+    float: left;
+}
+
+.navigation a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navigation a:hover{
+    background: #5b81a7;
+}
+
+.item h1{
+    border-bottom: 3px solid rgb(197, 197, 206) ;
+    width: 20%;
+}
+
+.box{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact{
+    background-color: #2c3e50;
+    color: white;
+    font-weight: 900;
+}
+
+.contact li{
+    list-style: none;
+    /* flex direction row property was not working so i used float */
+    float: left;
+    padding: 10px 20px;
+
+}
+.contact a{
+    text-decoration: none;
+    display: inline;
+    color: white;
+}
+
+.foot{
+    width: 100%;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    font-weight: 900;
+}
