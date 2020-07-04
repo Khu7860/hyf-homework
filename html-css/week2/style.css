@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  /* header area */
+  .header{
+      background-color: #fafafa;
+      padding: 20px 0;
+  }
+.header-inner{
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px 0;
+  }
+.header-inner h1{
+      text-transform: uppercase;
+      margin-bottom: 10px;
+  }
+  /* navigation  */
+  .main-nav{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 0;
+  }
+  .main-nav li{
+      list-style: none;
+      margin-right: 30px;
+  }
+  .main-nav a{
+      cursor: pointer;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+  }
+  .main-nav a:hover{
+      border-bottom: black solid 2px;
+  }
+  .main-nav ul{
+      display: flex;
+      align-items: flex-start;
+  }
+  
+  /* showcase */
+  .showcase{
+      background: url('office1.jpg') center center/cover;
+      width: 100%;
+      height: 450px;
+  }
+
+  /* main content area */
+  .main-content{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+   h2,h3 {
+      text-transform: uppercase;
+      padding-bottom: 20px;
+  }
+  .web-icons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .web-icons img{
+      width: 100%;
+  }
+  .second{
+      margin-top: 40px;
+  }
+
+  /* footer area */
+  .footer{
+      background-color: #6736cd;
+      padding: 40px 0;
+      color: white;
+  }
+  .footer .links li{
+      list-style: none;
+      padding-bottom: 10px;
+      font-weight: bold;
+  }
+  .links ul:nth-child(3) li,.links ul:nth-child(4) li{
+
+      border-bottom: .5px grey solid;
+      padding-bottom: 20px;
+      margin-top: 10px;
+  }
+  .links ul:nth-child(3) li:first-child ,.links ul:nth-child(4) li:first-child{
+    border: none;
+  }
+  .links ul:nth-child(3) li:last-child ,.links ul:nth-child(4) li:last-child{
+    border: none;
+  }
+
+  .footer .links a{
+      text-decoration: none;
+      color: white;
+  }
+  .footer .links a:hover{
+      border-bottom: 2px solid white;
+  }
+  .footer .links {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    align-self: center;
+  }
+  .links iframe{
+      width: 80%;
+      height: 200px;
+  }
+
+  /* adding midea quiries for responsiveness */
+
+  @media(max-width:700px){
+      .two p:last-child{
+          display: none;
+      }
+      .footer .links{
+          grid-template-columns: repeat(2, 1fr);
+      }
+      .web-icons{
+        grid-template-columns: repeat(3, 1fr);
+      }
+  }
+  @media(max-width:500px){
+     .main-nav ul{
+         flex-direction: column;
+     }
+     .main-nav li{
+         padding: 10px;
+     }
+     .main-content{
+         grid-template-columns: 1fr;
+     }
+     .web-icons{
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .web-icons img{
+          width: 70%;
+      }
+      .footer .links{
+        grid-template-columns: 1fr ;
+    }
+
+  }
