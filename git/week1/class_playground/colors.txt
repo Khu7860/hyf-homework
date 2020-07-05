@@ -1,2 +1,2 @@
 red blue black
-silver
+silver red
