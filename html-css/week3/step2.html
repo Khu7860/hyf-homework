@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html-css homework Week3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <p>logo</p>
+            </div>
+            <div class="navigation">
+                <p>Navigation</p>
+            </div>
+        </header>
+        <main>
+            <section class="textarea">
+                <h1>Sign up for yourcustomtailor.com</h1>
+            </section>
+            
+            <section class="progress-bar">
+                <h2>Step 2/4 - How can we reach you?</h2>
+                <p>Progress:</p>
+                <div class="meter">
+                    <span style="width: 30%"></span>
+                </div>
+                <p>We will probably need to stay in touch somehow. Let us know how we can reach you?</p>
+            </section>
+
+            <section class="formarea">
+                <form action="step3.html" method="GET">
+                    <div class="form-labels">
+                        <label for="email">Email*</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="phone">Phone*</label>
+                        <input type="number" name="phone" id="phone" minlength="8" required>
+                    </div>
+
+                    <div class="form-labels">
+                        <label for="pass">Password*</label>
+                        <input type="password" name="password" id="pass" minlength="8" required>
+                    </div>
+                    <div class="form-labels">
+                        <label for="re-pass">Re-enter Password*</label>
+                        <input type="password" name="password" id="re-pass" minlength="8" required>
+                    </div>
+                    
+                    <p>I want to Sign Up for the Newsletter:</p>
+                    <div class="newsletter">
+                        <label for="weekly">Weekly news</label>
+                        <input type="radio" name="letter" id="weekly" value="1">
+
+                        <label for="Monthly">Monthly news</label>
+                        <input type="radio" name="letter" id="monthly" value="2">
+
+                        <label for="no-news">Don't send me news</label>
+                        <input type="radio" name="letter" id="no-news" value="0">
+                    </div>
+
+                    <button type="submit" class="submit-btn">Next Step</button>
+                    
+                </form>
+            </section>
+
+        </main>
+    </div>
+</body>
+</html>

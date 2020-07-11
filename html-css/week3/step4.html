@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html-css homework Week3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <p>logo</p>
+            </div>
+            <div class="navigation">
+                <p>Navigation</p>
+            </div>
+        </header>
+        <main>
+            <section class="textarea">
+                <h1>Sign up for yourcustomtailor.com</h1>
+            </section>
+            
+            <section class="progress-bar">
+                <h2>Step 2/4 - Payment</h2>
+                <p>Progress:</p>
+                <div class="meter">
+                    <span style="width: 85%"></span>
+                </div>
+                <p>Please fill in your payment data</p>
+            </section>
+
+            <section class="formarea">
+                <form action="/action_page.php" method="GET">
+                    
+                    <div class="form-labels">
+                        <label for="name-on-card">Name on card*</label>
+                        <input type="text" name="name-on-card" id="name-on-card" required>
+                    </div>
+
+                    <div class="form-labels">
+                        <label for="card-type">Card type*</label>
+                        <select id="card-type" name="card-type" required>
+                           <option value="0"></option>
+                           <option value="debit-card">Debit card</option>
+                           <option value="Credit-card">Credit card</option>
+                           <option value="visa">VISA</option>
+                           <option value="master-card">Master card</option>
+                        </select>
+                    </div>   
+
+                    <div class="form-labels">
+                        <label for="ccnumber">Credit card number*</label>
+                        <input type="number" name="ccnumber" id="ccnumber" placeholder="1111-2222-3333-4444" required>
+
+                        <label for="fname">First name*</label>
+                        <input type="text" name="fname" id="fname">
+                    </div>
+                    
+                    <div class="form-labels exp-month-year">
+                            <label for="exp-month">Expiry month*</label>
+                            <input type="number" name="exp-month" id="exp-month" min="00" max="12" required>
+
+                            <label for="exp-year">Expiry year*</label>
+                            <input type="number" name="exp-year" id="exp-year" min="2018" max="2050" required>
+                    </div>
+
+                    <div class="form-labels ccv">
+                        <label for="ccv">CCV*</label>
+                        <input type="number" name="ccv" id="ccv" min="100" max="999" required>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Next Step</button>
+                    
+                </form>
+            </section>
+
+        </main>
+    </div>
+</body>
+</html>
