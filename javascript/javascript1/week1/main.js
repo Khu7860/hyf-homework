@@ -42,3 +42,11 @@ houseCost = 1000000;
 housePrice = volumeInMeters * 2.5 * 1000 + gardenSizeInM2 * 300;
 priceDiff = Math.abs(houseCost - housePrice);
 console.log("Julia is Paying " + priceDiff + " less than its actual value.");
+
+// Ez Namey (Startup name generator) Optional
+
+let firtWords = ["Easy", "Awesome", "Corporate", "Lucky", "Fantastic"];
+let secondWords = ["Solution", "Tech", "Beautiful", "Funcky", "Excited"];
+const randomNumber = Math.floor(Math.random() * 5) + 0;
+let startUpName = firtWords[randomNumber] + " " + secondWords[randomNumber];
+console.log(startUpName);
