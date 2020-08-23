@@ -62,20 +62,19 @@ seriesDurations.push({
 }); // changing array by adding my fav series in array
 
 function percentageAverageLifeSpam() {
-  let totalRoundedAverage;
+  let totalRoundedAverage = 0;
 
   for (let i = 0; i < seriesDurations.length; i++) {
     let convertIntoDays =
       seriesDurations[i].days +
       seriesDurations[i].hours / 24 +
       seriesDurations[i].minutes / 60 / 24;
-    let average = (convertIntoDays * 100) / (80 * 365);
-    let roundedAverage = Math.round(average * 1000) / 1000;
+    let average = (convertIntoDays * 100) / (80 * 365); // formula for average of 80 years
+    let roundedAverage = Math.round(average * 1000) / 1000; // rounding off upto 3 decimal
     console.log(
       seriesDurations[i].title + " took " + roundedAverage + "% of my life"
     );
-    totalRoundedAverage = roundedAverage;
-    totalRoundedAverage += totalRoundedAverage;
+    totalRoundedAverage += roundedAverage;
   }
 
   console.log("In total that is " + totalRoundedAverage + "% of my life.");
