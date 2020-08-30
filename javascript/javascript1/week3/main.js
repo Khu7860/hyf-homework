@@ -80,3 +80,55 @@ function percentageAverageLifeSpam() {
   console.log("In total that is " + totalRoundedAverage + "% of my life.");
 }
 percentageAverageLifeSpam();
+
+/// NOnoN0nOYes (Note taking app) ///
+
+// Save a note
+
+const notes = [];
+
+function saveNote(content, id) {
+  // write some code here
+  notes.push({ content, id });
+  return notes;
+}
+
+saveNote("Pick up groceries", 1);
+saveNote("Do laundry", 2);
+
+console.log(notes);
+
+//  Get a note
+
+function getNote(id) {
+  // your code here
+  for (let i = 0; i < notes.length; i++) {
+    if (isNaN(id)) {
+      return "String is empty or id is not a number";
+    } else {
+      var result = notes.filter((obj) => {
+        return obj.id === id;
+      });
+      return result;
+    }
+  }
+}
+
+const firstNote = getNote(1);
+console.log(firstNote); // {content: 'Pick up groceries', id: 1}
+
+// Log out notes
+
+function logOutNotesFormatted() {
+  // your code here
+  for (let i = 0; i < notes.length; i++) {
+    console.log(
+      "The note with id: " +
+        notes[i].id +
+        ", has the following note text: " +
+        notes[i].content
+    );
+  }
+}
+
+logOutNotesFormatted();
